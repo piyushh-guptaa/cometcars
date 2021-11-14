@@ -1,0 +1,150 @@
+body{
+  font-family: "Montserrat";
+  font-weight: 400;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+
+h1 {
+  font-weight:900;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+h2{
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: #185ADB;
+}
+
+h3{
+  font-weight: 500;
+}
+
+
+p{
+  color: black;
+}
+
+#navbarDropdown{
+  color: white;
+}
+
+#title {
+  background: linear-gradient(to bottom right, #04009a 0%, #185adb 58%);
+  color: white;
+}
+
+.title-text{
+  font-weight: 500;
+  color: white;
+  font-size: 2rem;
+
+}
+
+.container-fluid {
+  padding: 0 15% 0%;
+}
+
+.navbar{
+
+  padding:0 0 0;
+}
+
+.navbar-brand{
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item{
+  padding: 0 18px;
+}
+
+.nav-link{
+  font-size:1.2 rem;
+
+}
+.navicon{
+  margin-top: 4px;
+}
+
+/* Booking */
+.label{
+  color:  #185ADB;
+}
+
+.headings{
+  color: #185ADB;
+}
+.imp{
+  color: red;
+}
+
+.sbutton{
+  text-align: center;
+}
+
+/* Pop-up */
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}

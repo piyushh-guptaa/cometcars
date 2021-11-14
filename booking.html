@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title> COMET - Car Rental </title>
+  <link rel="icon" href="images/comet-icon.ico">
+
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/ff60ee1bea.js" crossorigin="anonymous"></script>
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&family=Ubuntu&display=swap" rel="stylesheet">
+  <!-- bootstrap -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+  <!-- MYCSS SHEET -->
+  <link rel="stylesheet" href="booking.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+
+  <section id="title">
+
+    <div class="container-fluid">
+
+
+
+      <!-- Nav Bar -->
+
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <a class="navbar-brand" href="welcome.html">
+          <img src="images/cometnav.png" width="50" height="50" class="d-inline-block align-top navicon" alt="">
+          COMET
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a onclick="logout()" class="dropdown-item" href="#">Log Out</a>
+              </div>
+            </li>
+
+
+          </ul>
+
+      </nav>
+    </div>
+  </section>
+
+  <section id="booking">
+
+    <div class="container-fluid">
+      <br>
+      <br>
+      <h3 class="headings">Your Booking Summary</h3>
+      <hr>
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-3 ">
+            <h6><label class="label" for="inputOrigin">Origin City</label></h6>
+            <span class="form-control-plaintext" id="inputGroupSelect01" ></span>
+          </div>
+          <div class="form-group col-md-3">
+            <h6><label class="label" for="inputDrop">Drop City</label></h6>
+            <span class="form-control-plaintext" id="inputGroupSelect02" ></span>
+          </div>
+          <div class="form-group col-md-3">
+            <h6><label class="label" for="inputDays">Total Day(s)</label></h6>
+            <span class="form-control-plaintext" id="totalDays" ></span>
+          </div>
+          <div class="form-group col-md-3">
+            <h6><label class="label" for="inputType">Car Type</label></h6>
+            <span class="form-control-plaintext" id="carType" ></span>
+          </div>
+          <div class="form-group col-md-6">
+            <h6><label class="label" for="inputDate1">Start Date</label></h6>
+            <span class="form-control-plaintext" id="pickupDate" ></span>
+          </div>
+          <div class="form-group col-md-6">
+            <h6><label class="label" for="inputDate2">End Date</label></h6>
+            <span class="form-control-plaintext" id="dropDate" ></span>
+          </div>
+
+        </div>
+
+
+
+        <h5 class="headings">Included with Your Rental</h5>
+        <hr>
+        <p>✔️ If the car’s bodywork gets damaged, the most you’ll pay towards repairs covered by the Collision Damage Waiver is the damage excess. This cover is only valid if you stick to the terms of the rental agreement. It doesn’t cover other
+          parts of the car (e.g. glass, wheels, interior, roof or undercarriage), or charges (e.g. for towing or off-road time), or anything in the car (e.g. child seats, GPS devices or personal belongings).</p>
+        <p>✔️ This covers the driver’s liability for injuries and property damage which are covered by the policy. It does not cover injuries to the driver or damage to the rental car. This cover is only valid if you stick to the terms of the rental
+          agreement.</p>
+        <p>✔️ If the car is stolen, the most you’ll pay towards replacement costs covered by the policy is the theft excess. This cover is only valid if you stick to the terms of the rental agreement.</p>
+        <p>✔️ In the event of an accident, this insurance covers medical and legal costs for injuries which are covered by the policy, including death and loss of limb(s). This cover is only valid if you stick to the terms of the rental agreement.
+        </p>
+        <p>✔️ Supplemental Liability Insurance (SLI) protects the driver against third-party claims for bodily injury or property damage as the result of an accident, subject to the terms of the rental agreement. This protection applies to all
+          authorised drivers of the rental car.</p>
+        <p> ✔️ Airport Surcharge </p>
+        <p> ✔️ Local Taxes</p>
+        <p>✔️ Free Tank</p>
+        <p>✔️ Your rental includes unlimited free kilometres.</p>
+        <p>✔️ Changing the length of your rental can affect how many kilometres you can drive for free. It can also affect how much you will pay for each additional kilometre.
+        </p>
+
+      </form>
+      <h5 class="headings">Important Information</h5>
+      <hr>
+      <p>• This reservation can be cancelled online free of charge up to 48 hours before the start of the rental. Reservations cancelled within 48 hours of the start of the rental will be charged a fee equal to a 3 day rental. There will be no refund
+        or additional charge for reservations less than 3 days in duration. Where the vehicle cannot be picked up due to insufficient documentation or failure to provide a valid credit card, this will be treated as a cancellation made within 48 hours
+        provided we are advised at the pick-up time.</p>
+      <p>• Reservations can be changed online free of charge before the start of the rental. Where these changes affect the rental price such as duration, car rental location or car type the difference will be calculated from the current published
+        price
+        of the new rental. rentalcars.com cannot refund any unused days or partial days if the vehicle is returned early on any rental.</p>
+      <p>• A 100% cancellation fee will be charged where we are not notified of cancellation prior to the start of the rental.</p>
+      <p>• Additional charges may apply at the counter if you pick up or drop off the car at a different date, time, or location than stated on your reservation.</p>
+      <p>• Only the driver will be able to pick up this rental car at the counter. An additional driver can be added at the counter for a fee payable directly to the rental car company.
+      </p>
+      <p>• Additional charges may apply for drivers under the age of 25.
+      </p>
+      <p>• Budget Rent a Car will charge the driver at the rental counter for optional items you add to your reservation, including any child seats or special requests such as pre-paid fuel.</p>
+      <p>• The driver will be required to present a valid driver's license and a valid credit card or debit card in his/her name at the counter for the security deposit. </p>
+
+
+  <!-- CONTACT SECTION -->
+
+    <form>
+      <h5 class="headings">Contact Information <i class="fa fa-id-card"></i></h5>
+      <hr>
+
+      <form>
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="validationDefault01">Full Name</label>
+            <input type="text"  validat required class="form-control" id="validationDefault01" placeholder="Ramesh Kumar" required>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="validationDefault02">Contact No.</label>
+            <input type="number" class="form-control" id="validationDefault02" placeholder="7584297866" required>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="validationDefault02">Aadhar Card Number</label>
+            <input type="number" class="form-control" id="validationDefault03" placeholder="1111-2222-3333" required>
+          </div>
+
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationDefault03">City</label>
+            <input type="text" class="form-control" id="validationDefault04" placeholder="City" required>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationDefault04">State</label>
+            <input type="text" class="form-control" id="validationDefault05" placeholder="State" required>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationDefault05">Zip</label>
+            <input type="number" class="form-control" id="validationDefault06" placeholder="Zip" required>
+          </div>
+        </div>
+
+        <!-- PAYMENT SECTION -->
+
+    <h5 class="headings">Payment Information</h5>
+    <hr>
+    <div class="bg-light rounded d-flex flex-column">
+      <div class="p-2 ml-3">
+        <h4>Order Recap</h4>
+      </div>
+      <div class="p-2 d-flex">
+        <div class="col-8">Car Rent per day</div>
+        <span id="disp_rpd" class="ml-auto"></span>
+      </div>
+      <div class="p-2 d-flex">
+        <div class="col-8">Total Day(s)</div>
+        <span id="total_Days" class="ml-auto"></span>
+      </div>
+      <div class="p-2 d-flex">
+        <div class="col-8">Cost</div>
+        <span id="calc_cost" class="ml-auto">₹ 4995</span>
+      </div>
+      <div class="p-2 d-flex">
+        <div class="col-8">GST</div>
+        <span id="calc_gst" class="ml-auto">+ ₹899</span>
+      </div>
+      <div class="border-top px-4 mx-3"> </div>
+      <div class="p-2 d-flex pt-3">
+        <div class="col-8">Total Amount</div>
+        <span id="disp_total_ammount" class="ml-auto">₹ 5894/-</span>
+      </div>
+      <div class="border-top px-4 mx-3"></div>
+      <div class="p-2 d-flex pt-3">
+        <div class="col-8"><b>Amount Payable at the time of Pick Up (50%)</b></div>
+        <div id="calc_50%" class="ml-auto"><b class="green">₹ 2947/-</b></div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="form-group">
+      <div class="form-check">
+        <input  type="checkbox" id="register" disabled="disabled" onclick="EnableDisableButton(this);">
+        <label class="form-check-label" for="invalidCheck2">
+          I agree to reservation's terms and conditions, Comet's Terms and Conditions and privacy policy by booking this car.
+        </label>
+
+        
+        <script>
+        $('#validationDefault01, #validationDefault02, #validationDefault03, #validationDefault04, #validationDefault05, #validationDefault06 ').bind('change', function() {
+          if(allFilled()) $('#register').removeAttr('disabled');
+      });
+      
+      function allFilled() {
+          var filled = true;
+          $('body input').each(function() {
+              if($(this).val() == '') filled = false;
+              else{$('#register').prop("disabled", true);}
+            });
+          return filled;
+      }
+
+      
+      </script>
+        
+
+
+
+      </div>
+    </div>
+    <div id="popup1" class="overlay">
+      <div class="popup">
+        <h3>Booking Successful!</h3>
+        <a class="close" href="../index.html">&times;</a>
+        <div class="content">
+          All the booking details will be shared to you through your e-mail, and our team will contact you prior to 24hrs of the Pick-Up Time for confirmation.
+        </div>
+        <br>
+        <div class="text-center">
+          <a href="../index.html" button class="btn btn-primary " type="button">Return to Home Page</button></a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <script>
+  document.getElementById('textbox1').value = idList;
+
+  function EnableDisableButton(cb) {
+
+    if (cb.checked == 0) {
+      document.getElementById('button1').disabled = true;
+    } else {
+      document.getElementById('button1').disabled = false;
+    }
+
+  }
+    </script>
+
+    <div class="text-center">
+      <!-- <a href="#popup01" ><button class="btn btn-primary " id="button1" type="submit" value="Enable / Disable" disabled >Reserve my Rental Car at ₹0/-</button></a> -->
+      <input class="btn btn-primary " id="button1" onclick="popup01" type="submit" value="Reserve my Rental Car at ₹0/-" disabled>
+    </div>
+    </form>
+    <br>
+    <br>
+    </div>
+  </section>
+
+
+  <script src="main.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+  <script src="firebase.js"></script>
+  <script src="booking.js"></script>
+</body>
+</html>

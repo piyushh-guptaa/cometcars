@@ -1,0 +1,95 @@
+body{
+  font-family: "Montserrat";
+  font-weight: 400;
+  text-align: center;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: "Montserrat";
+}
+
+h1 {
+  font-weight:900;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+h2{
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: #185ADB;
+}
+
+h3{
+  font-weight: 500;
+}
+
+
+p{
+  color: #8f8f8f;
+}
+
+#navbarDropdown{
+  color: white;
+}
+
+#title {
+  background: linear-gradient(to bottom right, #04009a 0%, #185adb 58%);
+  color: white;
+}
+
+.title-text{
+  font-weight: 500;
+  color: white;
+  font-size: 2rem;
+
+}
+
+.container-fluid {
+  padding: 0 15% 0%;
+}
+
+.navbar{
+
+  padding:0 0 0;
+}
+
+.navbar-brand{
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item{
+  padding: 0 18px;
+}
+
+.nav-link{
+  font-size:1.2 rem;
+
+}
+.navicon{
+  margin-top: 4px;
+}
+
+/* pricing-section */
+#pricing {
+  padding: 0 15% 0;
+  padding-top: 50px;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+.card{
+
+  border-color: #185adb;
+}
+
+.card:hover{
+     box-shadow: 1px 8px 20px grey;
+    -webkit-transition:  box-shadow .6s ease-in;
+  }

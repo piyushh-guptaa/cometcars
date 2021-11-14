@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title> COMET - Car Rental  </title>
+  <link rel="icon" href="images/comet-icon.ico">
+
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/ff60ee1bea.js" crossorigin="anonymous"></script>
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&family=Ubuntu&display=swap" rel="stylesheet">
+  <!-- bootstrap -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+  <!-- MYCSS SHEET -->
+  <link rel="stylesheet" href="selectCar.css">
+
+</head>
+
+<body>
+
+  <section id="title">
+
+    <div class="container-fluid">
+
+      <!-- Nav Bar -->
+      
+      <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <a class="navbar-brand" href="index.html">
+          <img src="images/cometnav.png" width="50" height="50" class="d-inline-block align-top navicon" alt="">
+          COMET
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a onclick="logout()" class="dropdown-item" href="#">Log Out</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+  </section>
+
+  <section id="pricing">
+
+    <h2>Enjoy your holidays with our wheels.</h2>
+    <p>Simple and affordable price plans for you and your family!</p>
+    <div class="row">
+
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <img class="card-img-top" src="images/swift.jpg" alt="swift-img">
+          <div class="card-header">
+            <h3>Hatchback</h3>
+          </div>
+          <div class="card-body">
+            <h3>₹999/day</h3>
+            <p>Swift/i20/Altroz</p>
+            <p>Recommended for 4-5 People</p>
+            <a href="booking.html" button onclick="hatchback()" id ="Hatchback" class="btn btn-lg btn-block btn-primary" type="submit">BOOK NOW</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <img class="card-img-top" src="images/verna.jpg" alt="verna-img">
+          <div class="card-header">
+            <h3>Sedan</h3>
+          </div>
+          <div class="card-body">
+            <h3>₹1399/day</h3>
+            <p>Ciaz/Honda City/Verna</p>
+            <p>Recommended for 5-6 People</p>
+            <a href="booking.html" button onclick="Sedan()" id ="Sedan" class="btn btn-lg btn-block btn-primary" type="submit">BOOK NOW</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-column col-lg-4">
+        <div class="card">
+          <img class="card-img-top" src="images/creta.jpg" alt="creta-img">
+          <div class="card-header">
+            <h3>SUV</h3>
+          </div>
+          <div class="card-body">
+            <h3>₹2399/day</h3>
+            <p>XUV/Scorpio/Creta</p>
+            <p>Recommended for 7+ People</p>
+            <a href="booking.html" button onclick="SUV()" id ="SUV" class="btn btn-lg btn-block btn-primary" type="button">BOOK NOW</button></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="main.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+  <script src="firebase.js"></script>
+  <script src="index.js"></script>
+  <script src="welcome.js"></script>
+
+</body>
+</html>

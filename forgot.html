@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Reset Password</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" href="images/comet-icon.ico">
+	<!-- google fonts -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- MYCSS sheets -->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="index.css">
+
+    <script src="sweetAlert.js"></script>
+
+</head>
+
+<body>
+
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-forgot100">
+
+
+				<form id="forgotForm" class="forgot100-form validate-form">
+					<span class="login100-form-title headBold" >
+						Please enter the registered E-mail 
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+						<input class="input100" required data-validate="email" type="email" id="email" name="email" placeholder="Email">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+
+
+
+					<div class="container-login100-form-btn">
+                           <a href="#" class="login100-form-btn" type="submit"  onclick = forgotPass() >
+							RETRIEVE
+						   </a>
+					</div>
+					<br>
+					<br>
+					<div class="text-center p-t-60">
+							<a class="txt2" href="index.html">
+									Already a user? Login Here.
+									<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+							</a>
+					</div>
+
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+	<script src="index.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+        <script src="firebase.js"></script>
+</body>
+
+</html>
