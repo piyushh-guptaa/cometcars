@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title> COMET - Car Rental </title>
+  <title> CarCaro - Car Rental </title>
   <link rel="icon" href="images/comet-icon.ico">
 
   <!-- fontawesome -->
@@ -41,7 +41,7 @@
 
         <a class="navbar-brand" href="welcome.html">
           <img src="images/cometnav.png" width="50" height="50" class="d-inline-block align-top navicon" alt="">
-          COMET
+          CarCaro
         </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -151,7 +151,7 @@
         <div class="form-row">
           <div class="col-md-4 mb-3">
             <label for="validationDefault01">Full Name</label>
-            <input type="text"  validat required class="form-control" id="validationDefault01" placeholder="Ramesh Kumar" required>
+            <input type="text"  validat required class="form-control" id="validationDefault01" placeholder="Louis Murphy" required>
           </div>
           <div class="col-md-4 mb-3">
             <label for="validationDefault02">Contact No.</label>
@@ -219,15 +219,15 @@
       <div class="form-check">
         <input  type="checkbox" id="register" disabled="disabled" onclick="EnableDisableButton(this);">
         <label class="form-check-label" for="invalidCheck2">
-          I agree to reservation's terms and conditions, Comet's Terms and Conditions and privacy policy by booking this car.
+          I agree to reservation's terms and conditions, CarCaro's Terms and Conditions and privacy policy by booking this car.
         </label>
 
-        
+
         <script>
         $('#validationDefault01, #validationDefault02, #validationDefault03, #validationDefault04, #validationDefault05, #validationDefault06 ').bind('change', function() {
           if(allFilled()) $('#register').removeAttr('disabled');
       });
-      
+
       function allFilled() {
           var filled = true;
           $('body input').each(function() {
@@ -237,9 +237,9 @@
           return filled;
       }
 
-      
+
       </script>
-        
+
 
 
 
@@ -258,6 +258,24 @@
         </div>
       </div>
     </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Booking Successful!</h5>
+        <a href="welcome.html"><button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button></a>
+      </div>
+      <div class="modal-body">
+        All the booking details will be shared to you through your e-mail, and our team will contact you prior to 24hrs of the Pick-Up Time for confirmation.
+      </div>
+      <div class="modal-footer">
+        <a href="welcome.html"><button type="button" class="btn btn-primary">Return to Home Page</button></a>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -278,7 +296,7 @@
 
     <div class="text-center">
       <!-- <a href="#popup01" ><button class="btn btn-primary " id="button1" type="submit" value="Enable / Disable" disabled >Reserve my Rental Car at ₹0/-</button></a> -->
-      <input class="btn btn-primary " id="button1" onclick="popup01" type="submit" value="Reserve my Rental Car at ₹0/-" disabled>
+      <input class="btn btn-primary " id="button1" onclick="popup01" type="button" data-toggle="modal" data-target="#exampleModal" value="Reserve my Rental Car at ₹0/-" disabled>
     </div>
     </form>
     <br>
