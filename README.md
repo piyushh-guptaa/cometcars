@@ -1,4 +1,3 @@
 # comet
 car rental system
-
-https://harshmuralia.github.io/comet-bike/
+https://piyushh-guptaa.github.io/cometcars/
